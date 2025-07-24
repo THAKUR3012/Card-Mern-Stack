@@ -19,7 +19,9 @@ function App() {
     );
   };
   const fetchUser = async () => {
-    const response = await axios.get("http://localhost:8000/api/v1/get");
+    const response = await axios.get(
+      "https://card-mern-stack.onrender.com/api/v1/get"
+    );
     console.log(response);
     setUsers(response.data.data);
   };

@@ -11,7 +11,7 @@ const EditModal = ({ user, onClose, onSave }) => {
     console.log(formData);
     console.log(id);
     const response = await axios.put(
-      `http://localhost:8000/api/v1/edit/${id}`,
+      `https://card-mern-stack.onrender.com/api/v1/${id}`,
 
       formData
     );
